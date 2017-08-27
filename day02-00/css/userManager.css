@@ -1,0 +1,101 @@
+#head_span{
+	margin: auto;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	width: 798px;
+	margin-top: 50px;
+	display: block;
+}
+#input_span{
+	margin-left: 30px;
+}
+#foot_span{
+	margin: auto;
+	border: 1px solid #ccc;
+	border-top: 0;
+	width: 798px;
+	display: block;
+}
+#btn_show{
+	margin-left: 10px;
+}
+.Page{
+	float: right;
+	margin-right: 10px;
+}
+#myTable{
+	width: 800px;
+	margin: auto;
+	border-collapse: collapse;
+}
+#table_tbody{
+	border-collapse: collapse;
+}
+#table_tbody tr th{
+	border: 1px solid #ccc;
+	height: 30px;
+	border-collapse: collapse;
+}
+#table_tbody tr td{
+	text-align: center;
+	height: 30px;
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+#div_show{
+	text-align: center;
+}
+#div_show_a2{
+	float: right;
+	margin-right: 5px;
+	font-size: 14px;
+	margin-top: 3px;
+	color: red;
+}
+#div_show_a{
+	float: right;
+	margin-right: 10px;
+	margin-top: 3px;
+	font-size: 14px;
+	color: blue;
+}
+#div_add{
+	
+	width: 800px;
+	border: 1px solid #ccc;
+	margin: auto;
+	text-align: center;
+	margin-top: 50px;
+}
+#addTable{
+	border: 1px solid #ccc;
+	width: 800px;
+	border-collapse: collapse;
+}
+#addTable tr{
+	border: 1px solid #ccc;
+}
+#addTable tr td{
+	border: 1px solid #ccc;
+}
+#jumpPage{
+	margin-left: 30px;
+	width: 50px;
+	height: 20px;
+}
+#div_userRole{
+	border: 1px solid #CCCCCC;
+	width: 800px;
+	height: 400px;
+	margin: auto;
+	text-align: center;
+}
+#nav_userRoleOperation{
+	margin: auto;
+	margin-top: 50px;
+	text-align: center;
+	border: 1px solid #CCCCCC;
+}
+tr{
+	height: 40px;
+}

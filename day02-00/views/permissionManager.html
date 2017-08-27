@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>表格</title>
+		<script src="../js/ajaxOperation.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/permissionmManager.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../css/permissionManager.css"/>
+	</head>
+
+	<body>
+		<!--角色权限管理页-->
+		<div id="div_userRole" hidden>
+			角色权限选择
+			<article id="rolePermissionShow"></article><br  />
+			<nav id="nav_rolePermissionOperation">
+				<button type="button" id="rolePermission_btn_update">修改</button>
+				<button type="button" id="rolePermission_btn_return">返回</button>
+			</nav>
+		</div>
+		<!--显示页-->	
+		<div id="div_show">
+			<span id="head_span">
+				<input type="text" id="input_span" value="" />
+				<button  id="query" type="button" disabled="disabled">查询</button>
+				<a id="div_show_a">权限列表</a><a id="div_show_a2">权限信息管理&nbsp;></a>
+			</span>
+			<table id="myTable">
+				<tbody id="table_tbody">
+					<tr>
+						<th>序号</th>
+						<th>权限</th>
+						<th>URL</th>
+						<th>详情</th>
+						<th>parentId</th>
+						<th colspan="2">操作</th>
+					</tr>
+				</tbody>
+			</table>
+			<span id="foot_span">
+				<button type="button" id="btn_show">新增</button>
+				<button type="button" id="btn_lastPage" class="Page" disabled="disabled">末页</button>
+				<button type="button" id="btn_nextPage" class="Page" disabled="disabled">下一页</button>
+				<button type="button" id="btn_previousPage" class="Page" disabled="disabled">上一页</button>
+				<button type="button" id="btn_firstPage" class="Page" disabled="disabled">首页</button>
+			</span><br />
+		</div>
+		<!--新增页-->
+		<div id="div_add" hidden>
+			<a id="div_show_a">权限修改增加</a><a id="div_show_a2">权限信息管理&nbsp;></a>
+			<table id="addTable">
+				<input type="hidden" name="id" id="id" value="" />
+				<tbody>
+					<tr>
+						<td><label for="permissionName">权限名：</label></td>
+						<td><input type="text" name="permissionName" id="permissionName" value="" class="add_input" /></td>
+					</tr>
+					<tr>
+						<td><label for="url">URL：</label></td>
+						<td><input type="url" name="url" id="url" value="" class="add_input" /></td>
+					</tr>
+					<tr>
+						<td><label for="remark">详情：</label></td>
+						<td><input type="text" name="remark" id="remark" value="" class="add_input" /></td>
+					</tr>
+					<tr>
+						<td><label for="parentId">parentId：</label></td>
+						<td><input type="text" name="parentId" id="parentId" value="" class="add_input" /></td>
+					</tr>
+				</tbody>
+			</table>
+			<br /><br />
+			<nav id="div_add_nav">
+				<button type="button" id="btn_addReturn">返回</button>
+				<button type="button" id="btn_addUser">添加</button>
+				<button type="reset" id="btn_reset">重置</button>
+			</nav>
+		</div>
+
+	</body>
+
+</html>

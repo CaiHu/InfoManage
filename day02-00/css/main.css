@@ -1,0 +1,29 @@
+html,body{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+.mainBorder{
+	border:1px solid #ccc;
+	border-radius: 5px;
+	margin-top:2px;
+}
+.innerBorder{
+	border:1px solid #ccc;
+	margin:2px;
+}
+.header{order:0;height:80px;}
+.body{order:1;flex-grow: 1;display: flex;flex-direction: row;}
+.footer{order:2;height: 40px;}
+.menu{width:200px}
+.page{flex-grow:1}
+
+ul li{
+	list-style: none;
+}
+
+iframe{
+	border:0px;
+	width:100%;
+	height: 100%;
+}

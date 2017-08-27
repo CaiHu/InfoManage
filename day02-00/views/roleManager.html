@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>表格</title>
+		<script src="../js/ajaxOperation.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/roleManager.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../css/roleManager.css"/>
+	</head>
+
+	<body>
+		<!--角色权限管理页-->
+		<div id="div_userRole" hidden>
+			角色权限选择
+			<article id="rolePermissionShow"></article><br  />
+			<nav id="nav_rolePermissionOperation">
+				<button type="button" id="rolePermission_btn_update">修改</button>
+				<button type="button" id="rolePermission_btn_return">返回</button>
+			</nav>
+		</div>
+		<!--显示页-->	
+		<div id="div_show">
+			<span id="head_span">
+				<input type="text" id="input_span" value="" />
+				<button  id="query" type="button">查询</button>
+				<a id="div_show_a">角色列表</a><a id="div_show_a2">角色信息管理&nbsp;></a>
+			</span>
+			<table id="myTable">
+				<tbody id="table_tbody">
+					<tr>
+						<th>序号</th>
+						<th>角色</th>
+						<th>详情</th>
+						<th colspan="2">操作</th>
+					</tr>
+				</tbody>
+			</table>
+			<span id="foot_span">
+				<button type="button" id="btn_show">新增</button>
+				<select id="jumpPage"></select>
+				<button type="button" id="btn_lastPage" class="Page">末页</button>
+				<button type="button" id="btn_nextPage" class="Page">下一页</button>
+				<button type="button" id="btn_previousPage" class="Page">上一页</button>
+				<button type="button" id="btn_firstPage" class="Page">首页</button>
+			</span><br /><br />
+			1.双击角色名称进行角色权限管理
+		</div>
+		<!--新增页-->
+		<div id="div_add" hidden>
+			<a id="div_show_a">角色修改增加</a><a id="div_show_a2">角色信息管理&nbsp;></a>
+			<table id="addTable">
+				<input type="hidden" name="id" id="id" value="" />
+				<tbody>
+					<tr>
+						<td><label for="roleName">用户名：</label></td>
+						<td><input type="text" name="roleName" id="roleName" value="" class="add_input" /></td>
+					</tr>
+					<tr>
+						<td><label for="remark">详情：</label></td>
+						<td><input type="remark" name="remark" id="remark" value="" class="add_input" /></td>
+					</tr>
+				</tbody>
+			</table>
+			<br /><br />
+			<nav id="div_add_nav">
+				<button type="button" id="btn_addReturn">返回</button>
+				<button type="button" id="btn_addUser">添加</button>
+				<button type="reset" id="btn_reset">重置</button>
+			</nav>
+		</div>
+
+	</body>
+
+</html>

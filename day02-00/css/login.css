@@ -1,0 +1,55 @@
+body{
+	display:flex;
+	height: 100vh;
+}
+fieldset{
+	border: 0px;
+	margin: 50px auto;
+}
+
+article{
+	margin-top: 15px;
+	margin-left: 52px;
+	text-align: left;
+}
+nav{
+	border: 1px solid #ccc;
+	width: 500px;
+	height: 200px;
+	margin-top: 80px;
+}
+#head_aside{
+	background-image:url(../img/login_logo.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px/120px 120px;
+	margin-left: 30px;
+	margin-top: 40px;
+	width: 120px;
+	height: 120px;
+	border: 1px solid black;
+}
+form{
+	width: 240px;
+	height: 120px;
+	margin-top: -120px;
+	margin-left: 200px;
+	padding-top: 20px;
+}
+#sec_wel{
+	border: 0px;
+	margin-top: 100px;
+	margin: auto;
+	border: 1px solid #ccc;
+	width: 502px;
+	height: 202px;
+	text-align: center;
+}
+#lab_username{
+	color: brown;
+	font: 20px/25px "微软雅黑";
+}
+.msg{
+	font-size: 12px;
+	color: red;
+	margin-left: 100px;
+}

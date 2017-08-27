@@ -1,0 +1,17 @@
+.showTable,.showTable th, .showTable td{
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+#section_table{
+	display: flex;
+	width: 100%;
+}
+.showTable{
+	margin: 0 auto;
+	margin-top: 50px;
+	text-align: center;
+	width: 100%;
+}
+.showTable tr{
+	height: 40px;
+}
